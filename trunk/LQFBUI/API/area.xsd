@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="area_list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded"  name="area">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:unsignedLong" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="description" type="xs:string"/>
+              <xs:element name="direct_member_count" type="xs:unsignedLong" />
+              <xs:element name="member_weight" type="xs:unsignedLong" />
+              <xs:element name="autoreject_weight" type="xs:unsignedLong" />
+              <xs:element name="active" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
