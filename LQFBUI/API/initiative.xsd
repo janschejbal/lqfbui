@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="initiative_list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="initiative">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="area_id" type="xs:unsignedLong" />
+              <xs:element name="area_name" type="xs:string" />
+              <xs:element name="issue_id" type="xs:unsignedLong" />
+              <xs:element name="issue_state" type="xs:string" />
+              <xs:element name="issue_created" type="xs:string" /><!--timestamp-->
+              <xs:element name="issue_accepted" type="xs:string" /><!--timestamp-->
+              <xs:element name="issue_half_frozen" type="xs:string" /><!--timestamp-->
+              <xs:element name="issue_fully_frozen" type="xs:string" /><!--timestamp-->
+              <xs:element name="issue_closed" type="xs:string" /><!--timestamp-->
+              <xs:element name="issue_admission_time" type="xs:string" /><!--interval-->
+              <xs:element name="issue_discussion_time" type="xs:string" /><!--interval-->
+              <xs:element name="issue_verification_time" type="xs:string" /><!--interval-->
+              <xs:element name="issue_voting_time" type="xs:string" /><!--interval-->
+              <xs:element name="issue_ranks_available" type="xs:boolean" default="false"/>
+              <xs:element name="policy_issue_quorum_num" type="xs:unsignedLong"/>
+              <xs:element name="policy_issue_quorum_den" type="xs:unsignedLong"/>
+              <xs:element name="policy_initiative_quorum_num" type="xs:unsignedLong"/>
+              <xs:element name="policy_initiative_quorum_den" type="xs:unsignedLong"/>
+              <xs:element name="policy_majority_num" type="xs:unsignedLong"/>
+              <xs:element name="policy_majority_den" type="xs:unsignedLong"/>
+              <xs:element name="policy_majority_strict" type="xs:boolean"/>
+              <xs:element name="id" type="xs:unsignedLong" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="discussion_url" type="xs:string" />
+              <xs:element name="created" type="xs:string" /><!--timestamp-->
+              <xs:element name="revoked" type="xs:string" /><!--timestamp-->
+              <xs:element name="suggested_initiative_id" type="xs:string"/><!--null-int-->
+              <xs:element name="admitted" type="xs:string"/><!--null-bool-->
+              <xs:element name="issue_population" type="xs:string"/><!--null-int-->
+              <xs:element name="supporter_count" type="xs:string"/><!--null-int-->
+              <xs:element name="informed_supporter_count" type="xs:string"/><!--null-int-->
+              <xs:element name="satisfied_supporter_count" type="xs:string"/><!--null-int-->
+              <xs:element name="satisfied_informed_supporter_count" type="xs:string"/><!--null-int-->
+              <xs:element name="issue_vote_now" type="xs:string"/><!--null-int-->
+              <xs:element name="issue_vote_later" type="xs:string"/><!--null-int-->
+              <xs:element name="issue_voter_count" type="xs:string"/><!--null-int-->
+              <xs:element name="positive_votes" type="xs:string"/><!--null-int-->
+              <xs:element name="negative_votes" type="xs:string"/><!--null-int-->
+              <xs:element name="agreed" type="xs:string"/><!--null-bool-->
+              <xs:element name="rank" type="xs:string"/><!--null-int-->
+              <xs:element name="current_draft_created" type="xs:string" /><!--timestamp-->
+              <xs:element name="current_draft_formatting_engine" type="xs:string" />
+              <xs:element name="current_draft_content" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
