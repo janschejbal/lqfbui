@@ -1,0 +1,1 @@
+This project is a free, open source GUI for the Liquid Feedback (LQFB) online democracy tool. It aims to allow doing most work with LQFB inside the GUI instead of having to use the web interface. The UI aims at maximum usage speed after a short learning period.
